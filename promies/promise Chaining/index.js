@@ -29,4 +29,4 @@ wait(2000)
     .then (result =>{
         console.log(result);
         return result * 2 ;
-    }) //this could solve the problem with 
+    }) //this could solve the problem with complexity
