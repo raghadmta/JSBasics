@@ -10,6 +10,12 @@
 
 <body>
     <h1>hey this is a simple JS work</h1>
+    <script>
+        fetch('http://localhost:3000/user') // user path suffix
+            .then(respsonse => respsonse.json()) // to convert the data into .jason 
+            .then(users => console.log(users)) // print the users in the console
+            .catch(error => console.log('Error', error)); // in case if thers an error print it
+    </script>
 </body>
 
 </html>
