@@ -9,26 +9,54 @@
 </head>
 
 <body>
-    <h1>hey this is a simple JS work</h1>
+
+    <h1>hey there let try everthing out !!!</h1>
+
+    <form id="formElm">
+
+        <input id="FormName" type="text" name="name" />
+        <input id="FormEmail" type="text" name="email" />
+        <input type="submit" />
+
+    </form>
 
     <script>
+        formElm.onsubmit = async e => {
+            e.preventDefault(); //to prevent the page from reloading after submition
+
+            // alert('submint done');
+
+            const data = { // to link the value
+                name: FormName.value,
+                email: FormEmail.value
+            };
+
+            // console.log(data);
+
+            const response = await fetch('http://localhost:3000/user', { //to send the data
+                method: 'POST',
+                headers: { // what the type of content type
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data) //to export the data from the form
+            });
+
+            const result = await response.json();
+            alert(result.message);
+        };
+
         async function fetchUsers() { // ask for the data in the console by writing ->  fetchUsers();
             try {
-                const response = await fetch('http://localhost:3000/user');
+                const response = await fetch('http://localhost:3000/user'); // user path suffix
 
-                let users = await response.json();
+                let users = await response.json();// to convert the data into .jason
 
-                console.log(users);
+                console.log(users); // print the users in the console
 
             } catch (e) {
-                console.log('Error', e);
+                console.log('Error', e);// in case if thers an error print it
             }
-        }
-
-        // fetch('http://localhost:3000/user') // user path suffix
-        //     .then(respsonse => respsonse.json()) // to convert the data into .jason
-        //     .then(users => console.log(users)) // print the users in the console
-        //     .catch(error => console.log('Error', error)); // in case if thers an error print it
+        };
 
     </script>
 </body>
