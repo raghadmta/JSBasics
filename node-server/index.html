@@ -23,11 +23,10 @@
     <!-- axios package -->
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
+
     <script>
         formElm.onsubmit = async e => {
             e.preventDefault(); //to prevent the page from reloading after submition
-
-            // alert('submint done');
 
             const data = { // to link the value
                 name: FormName.value,
@@ -44,7 +43,7 @@
                 const response = await axios.get('http://localhost:3000/user');
                 console.log(response.data);
             } catch (e) {
-                console.log('Error', e);// in case if thers an error print it
+                console.log('Error', e); // in case if thers an error print it
             }
         }
 
