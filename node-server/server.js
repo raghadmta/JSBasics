@@ -24,5 +24,4 @@ app.post('/user', (req, res) =>{ //to add the user, post is to sent the data to 
     res.json({message: "user added successfully!"});
 })
 
-//server listen to port number:
-app.listen(3000, () => console.log('server is listening in port 3000!'));
+app.listen(3000, () => console.log('server is listening in port 3000!')); //server listen to port number:
