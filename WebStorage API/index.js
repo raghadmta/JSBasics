@@ -8,7 +8,7 @@ localStorage.clear(); // remove all the memory
 
 
 // sessionStorage
-sessionStorage.setItem('email', 'raghad@gmail.com');
+sessionStorage.setItem('email', 'example@example.com');
 let email = sessionStorage.getItem('email');
 console.log(email);
 
