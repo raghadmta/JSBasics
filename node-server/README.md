@@ -22,9 +22,9 @@
     ![3](https://user-images.githubusercontent.com/55548241/217590601-27d7e8c8-ddaa-42ba-b976-cf8a09bef00f.png)
 
 
-<aside>
-                💡 to stop it press Ctrl+C
-</aside>
+
+     💡 to stop it press Ctrl+C
+
 
  - go to [localhost:3000](http://localhost:3000/) to see the page
   
