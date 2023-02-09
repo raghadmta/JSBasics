@@ -1,12 +1,29 @@
-let day = prompt('Enter Day');
+let day = +prompt('Enter day :'); // the + is to convert the input to a number type
+
+switch (day) {
+    case 0:
+        console.log('Sunday');
+        break;
+    case 1:
+        console.log('Monday');
+        break;
+    case 2:
+        console.log('Tuesday');
+        break;
+    case 3:
+        console.log('Wedensday');
+        break;
+    case 4:
+        console.log('Thursday');
+        break;
+    case 5:
+        console.log('Friday');
+        break;
+    case 6:
+        console.log('Saturday');
+        break;
+    default:
+        console.log('Invalied Input');
 
 
-if (day == 0) alert('Sunday');
-else if (day == 1) alert('Monday');
-else if (day == 2) alert('Tuesday');
-else if (day == 3) alert('Wednesday');
-else if (day == 4) alert('Thursday');
-else if (day == 5) alert('friday');
-else if (day == 6) alert('Saturday');
-
-else alert('not a day in the week');
+}
