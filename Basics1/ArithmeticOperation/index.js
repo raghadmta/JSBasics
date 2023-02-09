@@ -24,3 +24,11 @@ console.log('1' + 3);
 console.log(1 + '3');
 
 console.log(1 + 2 + '33');
+
+
+// Comparison
+console.log(1 === '1'); // === will compare the data type 
+console.log(1 == '1'); // == will convert then compare
+console.log(true == 1);
+console.log(true == '1');
+
