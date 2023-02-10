@@ -1,17 +1,12 @@
-// decleration 
-
-start(); // we can call it anywhere in the code
-
-function start() {
-    console.log('Start');
-}
-
-start();
+const sum = (a, b) => a + b;
+console.log(sum(4, 6));
 
 
-// Expression 
-let stop = function () {
-    console.log('Stop');
-};
+// Arrow function with one parameter
+const square = (num) => num * num;
+console.log(square(4));
 
-stop(); // we can call it only after the Expression
+
+// Arrow function with no parameters 
+const hello = () => console.log('hey there !');
+hello();
