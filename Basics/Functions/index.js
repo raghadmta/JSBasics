@@ -1,12 +1,19 @@
-const sum = (a, b) => a + b;
-console.log(sum(4, 6));
+function sum(first, ...numbers) {//(n1, n2). // Rest parameter should be in the first palce
 
+    // console.log(arguments); // shows the argument in need
 
-// Arrow function with one parameter
-const square = (num) => num * num;
-console.log(square(4));
+    // // Old way 
+    // let total = 0;
+    // for (let n of arguments) total += n;
+    // return total;
 
+    // Newer way
+    console.log(numbers);
+    let total = first;
+    for (let n of numbers) total += n;
+    return total;
+};
 
-// Arrow function with no parameters 
-const hello = () => console.log('hey there !');
-hello();
+console.log(
+    sum(3, 4, 5, 4, 5)
+);
