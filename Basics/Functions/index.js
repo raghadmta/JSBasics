@@ -1,11 +1,13 @@
-function A() {
-    console.log('hi there');
+function greeting(name) {
+    console.log('Hello ' + name);
+}
+greeting('Raghad');
+
+
+// Number functions
+function sum(n1, n2 = 0) { // we gave the n2 a  defulat value
+    return n1 + n2;
 }
 
-function odd() {
-    for (let i = 1; i <= 10; i++) {
-        if (i % 2) console.log(i);
-    }
-}
-
-odd();
+let result = sum(5, 5);
+console.log('Resulte is ', result);
