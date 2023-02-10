@@ -1,19 +1,16 @@
-function sum(first, ...numbers) {//(n1, n2). // Rest parameter should be in the first palce
+function hello(name) {
+    console.log('Hi there !! ' + name);
+}
 
-    // console.log(arguments); // shows the argument in need
+let timeId = setTimeout(hello, 3000, 'Raghad'); // to start the function after 3 sec
+clearTimeout(timeId); // to clean the timer
 
-    // // Old way 
-    // let total = 0;
-    // for (let n of arguments) total += n;
-    // return total;
+let intevalId = setInterval(hello, 1000, 'Raghad'); // repeate the function after 1 sec
+clearInterval(intevalId);// to clean the timer
 
-    // Newer way
-    console.log(numbers);
-    let total = first;
-    for (let n of numbers) total += n;
-    return total;
-};
 
-console.log(
-    sum(3, 4, 5, 4, 5)
-);
+// setTimeout(function trick() {
+//     console.log('tick');
+//     setTimeout(trick, 1000);
+// }, 1000);
+// // will make sure that the function is finished then it waites 1 sec and the run again
