@@ -1,41 +1,27 @@
-let fruit = ["apple", "oreange", "banana"];
+let arr = ["I", "Study", "JavaScript"];
+console.log(arr);
 
 
-// add to the start.
-fruit.unshift('pear');
-console.log(fruit);
+// // splice
+// arr.splice(index number, how many items to be replaced, 'the value of the items',...); 
+arr.splice(3, 1, 'Ruby');
+console.log(arr);
 
 
-// add to the end.
-fruit[4] = 'chery';
-console.log(fruit);
+// slice
+// arr.slice(start of the slice,ending of the slice);
+let part = arr.slice(0, 2); // the ending is not included
+console.log(part); // print the sliced part
 
-fruit[fruit.length] = 'greap';
-console.log(fruit);
+// slice form the start x
+let par = arr.slice(2);
+console.log(par);
 
-
-// add x numbers of elemnts.
-fruit.push('bluberries', 'strawberries');
-console.log(fruit);
-
-
-// add element in index x
-fruit.splice(3, 0, 'plum', ' pineapple');
-console.log(fruit);
+// duplicate the array
+let pa = arr.slice();
+console.log(pa);
 
 
-// remove first item 
-const first = fruit.shift();
-console.log('item deleted: ' + first);
-console.log(fruit);
-
-// remove last item 
-const last = fruit.pop();
-console.log('item deleted: ' + last);
-console.log(fruit);
-
-
-// remove more than one item from the middle 
-fruit.splice(0, 2); // fruit.splice(index number,how many items to be deleted); 
-console.log(fruit);
-
+// concat , join arrays togather
+let numbers = [1, 2];
+console.log(numbers.concat([3, 4], [5, 6]));
