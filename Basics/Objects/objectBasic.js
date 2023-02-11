@@ -1,4 +1,4 @@
-// literal way.
+// Literal way.
 let person = {
     name: 'Raghad',
     age: 25,

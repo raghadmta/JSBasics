@@ -1,4 +1,4 @@
-// hold refrence to an object
+// Hold refrence to an object
 function Person(name, age, gender) {
     this.name = name;
     this.age = age;
@@ -9,11 +9,11 @@ function Person(name, age, gender) {
 }
 
 
-// object info
+// Object info
 let person1 = new Person('raghad', 24, 'female'); // write person1 in the console
 
 
-// arrays of objects
+// Arrays of objects
 let persona = [
     new Person('raghad', 25, 'female'),
     new Person('raghad', 26, 'female'),
