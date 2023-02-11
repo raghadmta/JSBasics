@@ -2,13 +2,13 @@ let arr = ["I", "Study", "JavaScript"];
 console.log(arr);
 
 
-// // splice
+// Splice
 // arr.splice(index number, how many items to be replaced, 'the value of the items',...); 
 arr.splice(3, 1, 'Ruby');
 console.log(arr);
 
 
-// slice
+// Slice
 // arr.slice(start of the slice,ending of the slice);
 let part = arr.slice(0, 2); // the ending is not included
 console.log(part); // print the sliced part
@@ -22,6 +22,6 @@ let pa = arr.slice();
 console.log(pa);
 
 
-// concat , join arrays togather
+// Concat , join arrays togather
 let numbers = [1, 2];
 console.log(numbers.concat([3, 4], [5, 6]));
