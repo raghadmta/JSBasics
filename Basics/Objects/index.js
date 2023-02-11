@@ -1,3 +1,4 @@
+// hold refrence to an object
 function Person(name, age, gender) {
     this.name = name;
     this.age = age;
@@ -6,6 +7,7 @@ function Person(name, age, gender) {
         console.log('hello there persons ! ');
     };
 }
+
 
 // object info
 let person1 = new Person('raghad', 24, 'female'); // write person1 in the console
