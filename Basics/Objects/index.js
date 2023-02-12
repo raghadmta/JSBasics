@@ -17,7 +17,9 @@ console.log(person1.name);
 const atribute = 'name';
 console.log(person1[atribute]);
 
-
-person1.age = 30; // change the value of the object
-person1.adress= 'Saudi Arabia'; // added a new propertie
-
+// change the value of the object
+person1.age = 30;
+// added a new propertie
+person1.adress = 'Saudi Arabia';
+// remove the propertie
+delete person1.adress;
