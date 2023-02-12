@@ -1,18 +1,18 @@
-// Premitve Types  String - Numbers - Boolean - undefind - null 
-// Refrence Types  object - Function - Array
-
-let x = 23;
-let y = x;
-x = 20;
-
-let z = { name: 'Abdulrhaman' };
-let e = z;
-z.name = 'Ali';
-
-
-function increase(number){
-    number.value ++;
+function Person(name, age, gender) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.hello = function () {
+        console.log('hello there persons ! ');
+    };
 }
 
-let number = {value: 1};
-increase(number);
+const person1 = new Person('raghad', 25, 'female');
+
+// Dot Notation
+console.log(person1.name);
+
+
+// Bracket Notation
+const atribute = 'name';
+console.log(person1[atribute]);
