@@ -19,3 +19,5 @@ console.log(person1[atribute]);
 
 
 person1.age = 30; // change the value of the object
+person1.adress= 'Saudi Arabia'; // added a new propertie
+
