@@ -16,3 +16,6 @@ console.log(person1.name);
 // Bracket Notation
 const atribute = 'name';
 console.log(person1[atribute]);
+
+
+person1.age = 30; // change the value of the object
