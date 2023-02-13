@@ -1,15 +1,15 @@
 function Person(name, age, gender) {
+    let id = Math.floor(Math.random() * 10);
     this.name = name;
     this.age = age;
     this.gender = gender;
     this.hello = function () {
-        if (canTalk())
-            console.log('hello there persons ! ');
+        console.log('hello there persons ! ');
     };
-    let canTalk = function () {
-        return age > 3;
-    }
+    // Object.defineProperty(obj, prop, descriptor) 
+    Object.defineProperty(this, 'id', {
+        get: function() { return id }
+    })
 }
 
 const person1 = new Person('Raghad', 25, 'female');
-person1.hello();
