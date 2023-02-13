@@ -9,17 +9,10 @@ function Person(name, age, gender) {
 
 const person1 = new Person('raghad', 25, 'female');
 
-// Dot Notation
-console.log(person1.name);
 
 
-// Bracket Notation
-const atribute = 'name';
-console.log(person1[atribute]);
+for(let key in person1){
+    if (typeof person1[key] == 'function') continue; // dont show the function
+    console.log(key, person1[key]);
 
-// change the value of the object
-person1.age = 30;
-// added a new propertie
-person1.adress = 'Saudi Arabia';
-// remove the propertie
-delete person1.adress;
+}
