@@ -11,8 +11,8 @@ function Person(name, age, gender) {
         get: function () { return id },
         // set: function (value) { id = value }, // we can change the id now
         set: function (value) {
-        if(!value) throw  new Error('invalid ID - not a correct number');
-        id = value;
+            if (!value) throw new Error('invalid ID - not a correct number');
+            id = value;
         }
     })
 }
