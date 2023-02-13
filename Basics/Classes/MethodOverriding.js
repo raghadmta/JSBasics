@@ -17,10 +17,12 @@ class Student extends Person {
         super(name, age);
         this.level = level;
     }
+    hello() {
+        console.log(
+            `Hello my name is ${this.name}.`
+        );
+    }
 }
 
 const student = new Student('Raghad', 15, 2);
 student.hello();
-
-// instanceof
-// student instanceof Student; -> true
