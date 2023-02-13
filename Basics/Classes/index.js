@@ -5,26 +5,11 @@ class Person {
     hello() {
         console.log('HEllo world !! ');
     }
-    static staticMethodExample() {
-        console.log('Hello from static Methoed'); // run Person.staticMethodExample(); with the class name
-
+    log() {
+        console.log(this);
     }
 }
 
 const person = new Person('Raghad');
-
-
-class MyMath {
-    static sum(...args) {
-        let total = 0;
-        for (let num of args) total += num;
-        return total;
-
-    }
-    static multiply(...args) {
-        let total = 1;
-        for (let num of args) total *= num;
-        return total;
-
-    }
-}
+const log = person.log;
+log(); // undefined
