@@ -8,8 +8,14 @@ function Person(name, age, gender) {
     };
     // Object.defineProperty(obj, prop, descriptor) 
     Object.defineProperty(this, 'id', {
-        get: function() { return id }
+        get: function () { return id },
+        // set: function (value) { id = value }, // we can change the id now
+        set: function (value) {
+        if(!value) throw  new Error('invalid ID - not a correct number');
+        id = value;
+        }
     })
 }
 
 const person1 = new Person('Raghad', 25, 'female');
+console.log(person1);
