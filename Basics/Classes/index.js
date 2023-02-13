@@ -1,15 +1,11 @@
 class Person {
-    constructor(name) {
+    constructor(name, age) {
         this.name = name;
+        this._age = age; // _ mean it privet/re-strictred
     }
-    hello() {
-        console.log('HEllo world !! ');
-    }
-    log() {
-        console.log(this);
+   get  age(){
+        return this._age;
     }
 }
 
-const person = new Person('Raghad');
-const log = person.log;
-log(); // undefined
+const person = new Person('Raghad', 25);
