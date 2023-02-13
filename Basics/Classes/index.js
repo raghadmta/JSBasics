@@ -1,15 +1,28 @@
 class Person {
     constructor(name, age) {
         this.name = name;
-        this._age = age; // _ mean it privet/re-strictred
+        this.age = age;
     }
-    get age() {
-        return this._age;
-    }
-    set age(value) {
-        if (value < 1) throw new Error('Invalid age !');
-        this._age = value;
+    hello() {
+        console.log(
+            `Hello my name is ${this.name}, and I am ${this.age} years old.`
+        );
     }
 }
 
-const person = new Person('Raghad', 25);
+
+class student extends Person { // class ClassName extends FromClass1, extends is for inherit.
+
+    constructor(name, age, level) {
+        super(name, age);
+        this.level = level;
+    }
+
+
+    print() {
+        console.log(`${this.name}, ${this.age}, ${this.level}`);
+    }
+}
+
+const person = new student('Raghad', 15, 2);
+person.hello();
