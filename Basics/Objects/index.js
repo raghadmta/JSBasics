@@ -1,10 +1,11 @@
-function Person() {
+function Person(name, age) {
+    let id = Math.floor(Math.random() * 10);
+    this.name = name;
+    this.age = age;
+    this.friends = [];
 }
 
-Person.prototype.name='';
-Person.prototype.age=0;
-Person.prototype.friends=[];
-Person.prototype.hello=function(){
+Person.prototype.hello = function () {
     console.log('hello There !! ');
 };
 
