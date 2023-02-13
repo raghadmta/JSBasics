@@ -11,18 +11,18 @@ class Person {
 }
 
 
-class Student extends Person {
+class student extends Person { // class ClassName extends FromClass1, extends is for inherit.
 
     constructor(name, age, level) {
         super(name, age);
         this.level = level;
     }
-    hello() {
-        console.log(
-            `Hello my name is ${this.name}.`
-        );
+
+
+    print() {
+        console.log(`${this.name}, ${this.age}, ${this.level}`);
     }
 }
 
-const student = new Student('Raghad', 15, 2);
-student.hello();
+const person = new student('Raghad', 15, 2);
+person.hello();
