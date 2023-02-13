@@ -1,9 +1,9 @@
-function Person(name, age, gender) {
-    let id = Math.floor(Math.random() * 10);
-    this.name = name;
-    this.age = age;
+function Person() {
 }
 
+Person.prototype.name='';
+Person.prototype.age=0;
+Person.prototype.friends=[];
 Person.prototype.hello=function(){
     console.log('hello There !! ');
 };
